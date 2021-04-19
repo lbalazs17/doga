@@ -1,0 +1,122 @@
+body {
+    background-color: #8c8;
+    background-image: url("img/grass.jpg");
+    width: 1200px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: Verdana;
+}
+
+.doboz, h1#focim{
+    background-color: #08f;
+    background-image: url("img/splash.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    max-width: 970px;
+    box-shadow: 0 0 2px 2px blue;
+    border-radius: 25px;
+    padding: 40px;
+    margin: 40px;
+}
+
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+h1#focim {
+    text-decoration: none;
+    width: 420px;
+    margin: auto;padding: 32px;
+    border-radius: 30px;
+    font-size: 24px;
+}
+
+p {
+    text-align: justify;
+    
+}
+li:hover {
+    list-style-image: url("img/sun.png");
+}
+li {
+    list-style-image: url("img/suw.png");
+    font-weight: bold;
+    color: white;
+}
+
+table.adat{
+    background-color: white;
+    color: #048;
+    float: right;
+    border-collapse: collapse;
+    border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px;
+    margin: 0 0 12px 18px;
+}
+
+table.adat tr td {
+    border: solid 2px lightseagreen;
+    padding: 4px 8px;
+}
+
+table.adat tr td:nth-child(1) {
+    font-weight: bold;
+}
+
+table.adat tr td:nth-child(2) {
+    width: 210px;
+}
+
+table.adat tr td.terkep img{
+    width: 20px;
+    float: left;
+}
+
+table.adat tr td.terkep a:hover {
+    background-color: yellow;
+}
+.table:nth-child(odd) {
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+div.linkek {
+    margin-left: 4px;
+    padding: 4px 16px;
+    border-left: double 6px white;
+    border-radius: 8px;
+    background-color: #09f;
+    width: 250px;
+    box-shadow: 2px 2px 2px #048;
+}
+
+div.galeria div.kiskep {
+    float: left;
+    width: 140px;
+    height: 140px;
+    margin: 4px;
+    border-radius: 6px;
+    background-color: white;
+    text-align: center;
+    line-height: 136px;
+}
+
+div.galeria div.kiskep img{
+    max-width: 128px;
+    max-height: 128px;
+    border-radius: 2px;
+    vertical-align:middle;
+}
+
+div.galeria div.kiskep:hover {
+    background-color: yellow;
+}
+
+
+
+

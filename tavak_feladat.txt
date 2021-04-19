@@ -1,0 +1,72 @@
+
+Készítsünk weblapot, mely rövid ízelítőt ad az ország nyaralótavairól. Válasszuk ehhez az alábbi helyszíneket:
+    Pécsi-tó (Orfű)
+    Bánki-tó (Bánk)
+    Vadása-tó (Őrség)
+    Holt-Tisza (Tiszafüred) 
+
+A tavak bemutatása során
+    emeljük ki a sajátos jellemzőiket,
+    mellékeljünk hozzájuk néhány képet,
+    adjuk meg térkép-hivatkozással, hogy hol találhatóak,
+    illetve tüntessük fel pár, helyi szempontból érdekes weboldal linkjét. 
+	
+Feladat:
+	A mintának megfelelő weboldal elkészítése
+	Formázás külső vagy belső stíluslappal.
+	
+Források:
+	szoveg.txt - csak a weboldal szöveges részeit, illetve a linkek címeit tartalmazza
+	tavak.html - félig elkészült weboldal, amely csak a Pécsi-tó részében tartalmazza a megfelelő html elemeket,
+		ebben láthatjuk a megfelelő működést is (képszöveg, mi nyílik új ablakban, stb.)
+	img mappa - az oldalon használt összes képet tartalmazza
+
+Stíluslap formázásai (ügyeljünk a reszponzív megjelenésre, használjunk töréspontokat):
+Ahol nincsenek konkrét értékek, vagy beállítás leírása, ott a mintát kell követni
+	teljes oldal: 
+		#8c8 háttérszín, grass.jpg háttérkép, 
+		szélesség 1200px, max.szélesség 100%, középre rendezve
+	oldal szöveg: 
+		fehér, Verdana
+	dobozok: 
+		#08f háttérszín, splash.png háttérkép jobb alsó sarokban fixen elhelyezve, 
+		maximum szélesség 970px (a főcím doboza kisebb)
+		árnyékolás, sarokkerekítés
+		páratlan dobozok jobbra, páros dobozok balra rendeződnek (mobilon középre 100% szélességgel) 
+			.doboz:nth-child(odd), .doboz:nth-child(even)
+		külső/belső margók
+	címsorok:
+		középre igazítva
+		aláhúzott (kivéve a főcím)
+	bekezdések:
+		sorkizárt igazítással (mobil eszközön balra igazítva)
+	táblázat:
+		színek és keretek a minta alapján
+		jobbra folyatás 
+			float
+		első oszlop vastagon szedve 
+			table.adat tr td:nth-child(1)
+		második oszlop szélessége 210px
+			table.adat tr td:nth-child(2)
+		a térképet jelölő kis kép 20px balra folyatva
+		a hivatkozást tartalmazó cella sárga, amikor fölé állunk
+	galéria kis képinek dobozai:
+		megjelenés (display) soron belüli blokk
+		szélesség, magasság 140px, sormagasság (line-height) 136px
+		árnyékolás, sarokkerekítés
+		háttér fehér, fölé állva sárga
+		tartalma középre igazítva
+	galéria kis képei:
+		max.szélesség és max magasság 128px
+		függőlegesen középre igazítva
+	kapcsolódó linkek doboza:
+		#09f háttérszín
+		árnyékolás, sarokkerekítés
+		dupla fehér baloldali szegélyezés
+		szélesség 250px
+	kapcsolódó linkek felsorolása:
+		felsorolásjel suw.png, fölé állva sun.png
+		felsorolás hivatkozás megjelenése soron belüli blokk
+		felsorolás hivatkozás háttere fölé állva sárga
+		felsorolás hivatkozás szélessége ne lógjon ki a linkek dobozából 
+			(ezt a sárga háttérnél tudjuk ellenőrizni)
